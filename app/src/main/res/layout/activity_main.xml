@@ -7,4 +7,152 @@
     tools:context=".MainActivity">
 
 
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <View
+            android:id="@+id/vi_logo_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/tweeklabs_logo"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_tweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/vi_logo_image"
+            android:text="Tweek"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_labs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tweek"
+            android:layout_toEndOf="@+id/vi_logo_image"
+            android:text="Labs"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_boundary"
+        android:hint="Phone Number"
+        android:padding="19dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phone_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_boundary"
+        android:hint="Password"
+        android:padding="19dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/logo_orange"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forgot_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/logo_orange"
+        android:hint="Sign In"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/layout_no_account"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/btn_sign_in"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vi_line1"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/vi_line1"
+            android:layout_marginStart="10dp"
+            android:text="Don't Have an Account?"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:textSize="19sp"/>
+
+        <View
+            android:id="@+id/vi_line2"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="2dp"
+            android:layout_toEndOf="@+id/tv_no_account"
+            android:background="@android:color/darker_gray">
+        </View>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_no_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Sign Up"
+        android:padding="12dp"
+        android:textColorHint="@color/logo_orange"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        tools:ignore="HardcodedText" />
+
+
 </RelativeLayout>
