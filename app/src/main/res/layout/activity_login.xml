@@ -6,158 +6,168 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/vi_logo_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/tweeklabs_logo"
-            android:padding="10dp" />
+            <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp">
 
-        <TextView
-            android:id="@+id/tv_tweek"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_toEndOf="@+id/vi_logo_image"
-            android:text="Tweek"
-            android:textSize="34sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/semi_bold" />
+                <View
+                    android:id="@+id/vi_logo_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/tweeklabs_logo"
+                    android:padding="10dp" />
 
-        <TextView
-            android:id="@+id/tv_labs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_tweek"
-            android:layout_toEndOf="@+id/vi_logo_image"
-            android:text="Labs"
-            android:textSize="34sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            tools:ignore="HardcodedText"
-            android:fontFamily="@font/semi_bold"/>
+                <TextView
+                    android:id="@+id/tv_tweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/vi_logo_image"
+                    android:text="Tweek"
+                    android:textSize="34sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/semi_bold" />
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_labs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tweek"
+                    android:layout_toEndOf="@+id/vi_logo_image"
+                    android:text="Labs"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText"
+                    android:fontFamily="@font/semi_bold"/>
 
-    <EditText
-        android:id="@+id/et_phone_number"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:autofillHints=""
-        android:background="@drawable/edit_text_boundary"
-        android:hint="Phone Number"
-        android:padding="19dp"
-        android:fontFamily="@font/medium"
-        tools:ignore="HardcodedText" />
+            </RelativeLayout>
 
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et_phone_number"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:autofillHints=""
-        android:background="@drawable/edit_text_boundary"
-        android:hint="Password"
-        android:padding="19dp"
-        android:fontFamily="@font/medium"
-        tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_text_boundary"
+                android:hint="Phone Number"
+                android:padding="19dp"
+                android:fontFamily="@font/medium"
+                tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tv_forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et_password"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="13dp"
-        android:text="Forgot Password?"
-        android:textColor="@color/logo_orange"
-        android:textSize="18sp"
-        android:fontFamily="@font/bold"
-        tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_phone_number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:autofillHints=""
+                android:background="@drawable/edit_text_boundary"
+                android:hint="Password"
+                android:padding="19dp"
+                android:fontFamily="@font/medium"
+                tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_sign_in"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_forgot_password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/logo_orange"
-        android:hint="Sign In"
-        android:padding="15dp"
-        android:textColorHint="@color/white"
-        android:textSize="20sp"
-        android:fontFamily="@font/bold"
-        app:cornerRadius="8dp"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_password"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="13dp"
+                android:text="Forgot Password?"
+                android:textColor="@color/logo_orange"
+                android:textSize="18sp"
+                android:fontFamily="@font/bold"
+                tools:ignore="HardcodedText" />
 
-    <RelativeLayout
-        android:id="@+id/layout_no_account"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/btn_sign_in"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_forgot_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/logo_orange"
+                android:hint="Sign In"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/bold"
+                app:cornerRadius="8dp"
+                tools:ignore="HardcodedText" />
 
-        <View
-            android:id="@+id/vi_line1"
-            android:layout_width="50dp"
-            android:layout_centerVertical="true"
-            android:layout_height="2dp"
-            android:background="@android:color/darker_gray">
-        </View>
+            <RelativeLayout
+                android:id="@+id/layout_no_account"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/btn_sign_in"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_no_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/vi_line1"
-            android:layout_marginStart="10dp"
-            android:text="Don't Have an Account?"
-            android:fontFamily="@font/bold"
-            android:layout_marginEnd="10dp"
-            android:textSize="19sp"/>
+                <View
+                    android:id="@+id/vi_line1"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray">
+                </View>
 
-        <View
-            android:id="@+id/vi_line2"
-            android:layout_width="50dp"
-            android:layout_centerVertical="true"
-            android:layout_height="2dp"
-            android:layout_toEndOf="@+id/tv_no_account"
-            android:background="@android:color/darker_gray">
-        </View>
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_no_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/vi_line1"
+                    android:layout_marginStart="10dp"
+                    android:text="Don't Have an Account?"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="19sp"/>
+
+                <View
+                    android:id="@+id/vi_line2"
+                    android:layout_width="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="2dp"
+                    android:layout_toEndOf="@+id/tv_no_account"
+                    android:background="@android:color/darker_gray">
+                </View>
+            </RelativeLayout>
 
 
-    <Button
-        android:id="@+id/btn_sign_up"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_no_account"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:hint="Sign Up"
-        android:padding="12dp"
-        android:textColorHint="@color/logo_orange"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:background="@drawable/theme_button_boundary"
-        android:fontFamily="@font/bold"
-        tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_no_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Sign Up"
+                android:padding="12dp"
+                android:textColorHint="@color/logo_orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/theme_button_boundary"
+                android:fontFamily="@font/bold"
+                tools:ignore="HardcodedText" />
 
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
