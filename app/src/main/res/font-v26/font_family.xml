@@ -3,50 +3,50 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Bold" />
+        android:font="@font/bold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/BoldItalic" />
+        android:font="@font/bold_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/ExtraBold" />
+        android:font="@font/extra_bold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/ExtraBoldItalic" />
+        android:font="@font/extra_bold_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Italic" />
+        android:font="@font/italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/Light" />
+        android:font="@font/light" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/LightItalic" />
+        android:font="@font/light_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/Medium" />
+        android:font="@font/medium" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/MediumItalic" />
+        android:font="@font/medium_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/Regular" />
+        android:font="@font/regular" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/SemiBold" />
+        android:font="@font/semi_bold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/SemiBoldItalic" />
+        android:font="@font/semi_bold_italic" />
 
 </font-family>
