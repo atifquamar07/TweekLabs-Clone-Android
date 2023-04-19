@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="823dp"
     tools:context=".LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="823dp"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
+            android:id="@+id/logo_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -55,68 +57,75 @@
 
             </RelativeLayout>
 
-            <EditText
-                android:id="@+id/et_phone_number"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/logo"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
-                android:autofillHints=""
-                android:background="@drawable/edit_text_boundary"
-                android:hint="Phone Number"
-                android:padding="19dp"
-                android:fontFamily="@font/medium"
-                tools:ignore="HardcodedText" />
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/logo_container">-->
 
-            <EditText
-                android:id="@+id/et_password"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_phone_number"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="23dp"
-                android:autofillHints=""
-                android:background="@drawable/edit_text_boundary"
-                android:hint="Password"
-                android:padding="19dp"
-                android:fontFamily="@font/medium"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edit_text_boundary"
+                    android:hint="Phone Number"
+                    android:padding="19dp"
+                    android:fontFamily="@font/medium"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:id="@+id/tv_forgot_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_password"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="13dp"
-                android:text="Forgot Password?"
-                android:textColor="@color/logo_orange"
-                android:textSize="18sp"
-                android:fontFamily="@font/bold"
-                tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_phone_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edit_text_boundary"
+                    android:hint="Password"
+                    android:padding="19dp"
+                    android:fontFamily="@font/medium"
+                    tools:ignore="HardcodedText" />
 
-            <Button
-                android:id="@+id/btn_sign_in"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_forgot_password"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:backgroundTint="@color/logo_orange"
-                android:hint="Sign In"
-                android:padding="15dp"
-                android:textColorHint="@color/white"
-                android:textSize="20sp"
-                android:fontFamily="@font/bold"
-                app:cornerRadius="8dp"
-                tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_password"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/logo_orange"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_forgot_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/logo_orange"
+                    android:hint="Sign In"
+                    android:padding="19dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/bold"
+                    app:cornerRadius="8dp"
+                    tools:ignore="HardcodedText" />
+
+<!--            </LinearLayout>-->
 
             <RelativeLayout
                 android:id="@+id/layout_no_account"
                 android:layout_width="wrap_content"
                 android:layout_below="@+id/btn_sign_in"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_height="wrap_content">
 
@@ -147,20 +156,21 @@
                     android:layout_toEndOf="@+id/tv_no_account"
                     android:background="@android:color/darker_gray">
                 </View>
+
             </RelativeLayout>
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_sign_up"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout_no_account"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="25dp"
                 android:hint="Sign Up"
-                android:padding="12dp"
+                android:padding="19dp"
                 android:textColorHint="@color/logo_orange"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:background="@drawable/theme_button_boundary"
                 android:fontFamily="@font/bold"
