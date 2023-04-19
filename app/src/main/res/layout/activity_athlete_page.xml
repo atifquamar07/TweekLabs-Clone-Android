@@ -35,7 +35,7 @@
             android:layout_centerHorizontal="true">
 
             <TextView
-                android:id="@+id/tv_sample_bowler"
+                android:id="@+id/tv_bowler_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SAMPLE BOWLER"
@@ -46,7 +46,7 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:id="@+id/tv_pace_bowler"
+                android:id="@+id/tv_bowler_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pace Bowler"
@@ -54,7 +54,7 @@
                 android:fontFamily="@font/semi_bold"
                 android:textSize="21sp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/tv_sample_bowler"
+                android:layout_below="@+id/tv_bowler_name"
                 android:layout_marginTop="5dp"
                 tools:ignore="HardcodedText" />
 
@@ -111,6 +111,8 @@
                     android:layout_below="@+id/tv_count_balls"
                     android:textColor="@color/white"
                     android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
                     tools:ignore="HardcodedText" />
 
             </RelativeLayout>
@@ -158,7 +160,9 @@
                     android:fontFamily="@font/semi_bold"
                     android:layout_below="@+id/tv_count_sessions"
                     android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
                     android:textSize="17sp"
+                    android:layout_marginTop="5dp"
                     tools:ignore="HardcodedText" />
 
             </RelativeLayout>
