@@ -7,8 +7,9 @@
     tools:context=".AthletePageActivity">
 
     <RelativeLayout
+        android:id="@+id/bowler_statistics_card"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="350dp"
         android:background="@color/logo_orange"
         tools:ignore="UselessParent">
 
@@ -167,5 +168,145 @@
         <!--Layout ending for statistics-->
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/rounded_corner_background">
+
+        <TextView
+            android:id="@+id/tv_athlete_sessions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATHLETE SESSIONS"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="@color/logo_orange"
+            tools:ignore="HardcodedText">
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_athlete_sessions"
+            android:layout_marginTop="22dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_session_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/session_image"
+                    android:contentDescription="Session Image"
+                    tools:ignore="HardcodedText">
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/card_session_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/iv_session_image">
+
+                    <TextView
+                        android:id="@+id/tv_session_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Session 2"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/semi_bold"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_key_balls_count"
+                        android:layout_below="@+id/tv_session_number"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        android:text="Balls Count:  "
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_value_balls_count"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/tv_session_number"
+                        android:textSize="17sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_key_balls_count"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="50" />
+
+                    <TextView
+                        android:id="@+id/tv_key_av_speed"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/tv_key_balls_count"
+                        android:layout_height="wrap_content"
+                        android:text="Average Speed:  "
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold" />
+
+                    <TextView
+                        android:id="@+id/tv_value_av_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/tv_key_balls_count"
+                        android:layout_toEndOf="@+id/tv_key_av_speed"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="110.2 kmph" />
+
+                    <TextView
+                        android:id="@+id/tv_key_date"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_below="@+id/tv_key_av_speed"
+                        android:layout_height="wrap_content"
+                        android:text="Time:  "
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_value_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/tv_key_av_speed"
+                        android:layout_toEndOf="@+id/tv_key_date"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="13/03/2023, 10:24AM" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
