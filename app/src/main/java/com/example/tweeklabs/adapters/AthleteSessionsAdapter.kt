@@ -29,7 +29,7 @@ class AthleteSessionsAdapter (private val allSessions: List<AthleteSession>):
         val item = allSessions[position]
         holder.sessionId.text = "Session " + item.sessionId.toString()
         holder.sessionBallsCount.text = item.ballsBowled.toString()
-        holder.sessionAverageSpeed.text = item.averageSpeed.toString()
+        holder.sessionAverageSpeed.text = item.averageSpeed.toString() + " KMPH"
         holder.sessionTime.text = item.time
     }
 
