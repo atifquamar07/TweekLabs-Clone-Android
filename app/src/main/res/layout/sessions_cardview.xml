@@ -7,8 +7,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
-        android:layout_width="370dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:paddingVertical="10dp"
         android:layout_gravity="center_horizontal"
         app:cardCornerRadius="15dp"
         app:strokeColor="@color/logo_orange"
@@ -19,6 +22,7 @@
         <RelativeLayout
             android:id="@+id/layout_cardview"
             android:layout_width="match_parent"
+            android:paddingVertical="15dp"
             android:layout_height="match_parent">
 
             <ImageView
@@ -27,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:src="@drawable/session_image"
                 android:contentDescription="Session Image">
             </ImageView>
@@ -44,7 +48,7 @@
                     android:id="@+id/tv_session_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Session 2"
+                    android:text="Session 1"
                     android:textSize="24sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/semi_bold">
@@ -54,7 +58,7 @@
                     android:id="@+id/tv_key_balls_count"
                     android:layout_below="@+id/tv_session_number"
                     android:layout_width="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:layout_height="wrap_content"
                     android:text="Balls Count:  "
                     android:layout_marginTop="5dp"
@@ -65,7 +69,7 @@
                     android:id="@+id/tv_value_balls_count"
                     android:layout_width="wrap_content"
                     android:layout_below="@+id/tv_session_number"
-                    android:textSize="17sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="5dp"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/tv_key_balls_count"
@@ -74,7 +78,7 @@
 
                 <TextView
                     android:id="@+id/tv_key_av_speed"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:layout_width="wrap_content"
                     android:layout_below="@+id/tv_key_balls_count"
                     android:layout_height="wrap_content"
@@ -86,7 +90,7 @@
                     android:id="@+id/tv_value_av_speed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
+                    android:textSize="16sp"
                     android:layout_below="@+id/tv_key_balls_count"
                     android:layout_toEndOf="@+id/tv_key_av_speed"
                     android:fontFamily="@font/semi_bold"
@@ -95,8 +99,8 @@
                 <TextView
                     android:id="@+id/tv_key_date"
                     android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_below="@+id/tv_key_av_speed"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tv_value_av_speed"
                     android:layout_height="wrap_content"
                     android:text="Time:  "
                     android:textColor="@color/logo_orange"
@@ -106,8 +110,8 @@
                     android:id="@+id/tv_value_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
-                    android:layout_below="@+id/tv_key_av_speed"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/tv_value_av_speed"
                     android:layout_toEndOf="@+id/tv_key_date"
                     android:fontFamily="@font/semi_bold"
                     android:text="13/03/2023, 10:24AM" />

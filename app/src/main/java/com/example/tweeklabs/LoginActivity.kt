@@ -8,17 +8,19 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
+import com.google.android.material.textfield.TextInputEditText
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var tvTweek: TextView
     private lateinit var tvLabs: TextView
-    private lateinit var etPhoneNumber: TextView
-    private lateinit var etPassword: TextView
+    private lateinit var etPhoneNumber: EditText
+    private lateinit var etPassword: EditText
     private lateinit var btnSignIn: Button
     private lateinit var btnSignUp: Button
 

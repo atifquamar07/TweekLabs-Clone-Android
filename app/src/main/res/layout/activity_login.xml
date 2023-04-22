@@ -60,9 +60,12 @@
 
             <EditText
                 android:id="@+id/et_phone_number"
-                android:layout_width="360dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/logo"
+                android:padding="19dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="60dp"
                 android:autofillHints=""
@@ -70,16 +73,18 @@
                 android:hint="Phone Number"
                 android:drawableStart="@drawable/phone_icon_layout"
                 android:drawablePadding="12dp"
-                android:padding="19dp"
                 android:fontFamily="@font/medium"
                 tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/et_password"
-                android:layout_width="360dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_below="@+id/et_phone_number"
                 android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
                 android:layout_marginTop="23dp"
                 android:autofillHints=""
                 android:background="@drawable/edit_text_boundary"
@@ -105,11 +110,13 @@
 
             <Button
                 android:id="@+id/btn_sign_in"
-                android:layout_width="360dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_forgot_password"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:backgroundTint="@color/logo_orange"
                 android:hint="Sign In"
                 android:padding="19dp"
@@ -124,6 +131,8 @@
             <RelativeLayout
                 android:id="@+id/layout_no_account"
                 android:layout_width="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_below="@+id/btn_sign_in"
                 android:layout_marginTop="60dp"
                 android:layout_centerHorizontal="true"
@@ -131,7 +140,7 @@
 
                 <View
                     android:id="@+id/vi_line1"
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_centerVertical="true"
                     android:layout_height="2dp"
                     android:background="@android:color/darker_gray">
@@ -150,7 +159,7 @@
 
                 <View
                     android:id="@+id/vi_line2"
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_centerVertical="true"
                     android:layout_height="2dp"
                     android:layout_toEndOf="@+id/tv_no_account"
@@ -162,8 +171,10 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_sign_up"
-                android:layout_width="360dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:layout_below="@+id/layout_no_account"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
@@ -175,6 +186,8 @@
                 android:background="@drawable/theme_button_boundary"
                 android:fontFamily="@font/bold"
                 tools:ignore="HardcodedText" />
+
+
 
         </RelativeLayout>
 
