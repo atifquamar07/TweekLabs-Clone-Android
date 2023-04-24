@@ -13,4 +13,4 @@
     - In the top bar, you would be seeing your device getting recognised by Android Studio.
     - Press the Play Button beside it, to install the app on your Android Device.
    
-4. If you simply want to test the application, you can install the app from here:  [TweekLabs](https://drive.google.com/file/d/1_h9F7bUrZrQBx-rzofsEFUCkC-Ymc-Ys/view?usp=share_link)
+4. If you simply want to test the application, you can install the app from here:  [TweekLabs](https://drive.google.com/file/d/1DuyEDxlhFtiKKTyhOjkYf2Rn5Xs51dR7/view?usp=sharing)
