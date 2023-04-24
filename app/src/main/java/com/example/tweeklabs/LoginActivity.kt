@@ -25,18 +25,24 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnSignUp: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // Disabling Night Mode
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Storing pointers to various attributes in the XML
         tvTweek = findViewById(R.id.tv_tweek)
         tvLabs = findViewById(R.id.tv_labs)
         etPhoneNumber = findViewById(R.id.et_phone_number)
         etPassword = findViewById(R.id.et_password)
         btnSignIn = findViewById(R.id.btn_sign_in)
         btnSignUp = findViewById(R.id.btn_sign_up)
+
+        // Getting theme colour
         val themeColor = ContextCompat.getColor(this, R.color.logo_orange)
 
+        // Applying theme colours to the first letter of "Tweek" and "Labs" word in the logo
         val txtTweek = "Tweek"
         val spannableTextTweek = SpannableString(txtTweek)
         spannableTextTweek.setSpan(ForegroundColorSpan(themeColor), 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
@@ -47,9 +53,12 @@ class LoginActivity : AppCompatActivity() {
         spannableTextLabs.setSpan(ForegroundColorSpan(themeColor), 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         tvLabs.text = spannableTextLabs
 
+        // Sign in button functionality
         btnSignIn.setOnClickListener {
             val inputPhoneNumber = etPhoneNumber.text.toString()
             val inputPassword = etPassword.text.toString()
+
+            // Error handling if phone number or password field are left blank
             if(inputPhoneNumber == ""){
                 Toast.makeText(this, "Phone Number can't be Blank.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -58,6 +67,8 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Password can't be Blank.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+            // Getting boolean whether login credentials match
             val isUserAuthenticated = userAuthentication(inputPhoneNumber, inputPassword)
             if (isUserAuthenticated){
                 Log.i("Authentication Status", "User is Valid.")
@@ -73,6 +84,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    // User authentication function
     private fun userAuthentication(phoneNumber: String, password: String): Boolean {
         return (phoneNumber == "9876543210" && password == "9876543210")
     }

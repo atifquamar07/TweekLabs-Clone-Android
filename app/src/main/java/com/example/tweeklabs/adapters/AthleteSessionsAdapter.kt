@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tweeklabs.AthleteSession
 import com.example.tweeklabs.R
 
+
+// Adapter for recycler view
 class AthleteSessionsAdapter (private val allSessions: List<AthleteSession>):
     RecyclerView.Adapter<AthleteSessionsAdapter.SessionInformationViewHolder>() {
 
