@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/sessions_cardview"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
@@ -33,15 +34,17 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
                 android:src="@drawable/session_image"
-                android:contentDescription="Session Image">
+                android:contentDescription="Session Image"
+                tools:ignore="HardcodedText">
             </ImageView>
 
             <RelativeLayout
+
                 android:id="@+id/card_session_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/iv_session_image">
 
                 <TextView
@@ -51,77 +54,102 @@
                     android:text="Session 1"
                     android:textSize="24sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/semi_bold">
+                    android:fontFamily="@font/semi_bold"
+                    tools:ignore="HardcodedText">
                 </TextView>
 
-                <TextView
-                    android:id="@+id/tv_key_balls_count"
-                    android:layout_below="@+id/tv_session_number"
-                    android:layout_width="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_height="wrap_content"
-                    android:text="Balls Count:  "
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/logo_orange"
-                    android:fontFamily="@font/semi_bold"/>
+                <RelativeLayout
 
-                <TextView
-                    android:id="@+id/tv_value_balls_count"
+                    android:id="@+id/layout_balls_count"
                     android:layout_width="wrap_content"
                     android:layout_below="@+id/tv_session_number"
-                    android:textSize="16sp"
-                    android:layout_marginTop="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/tv_key_balls_count"
-                    android:fontFamily="@font/semi_bold"
-                    android:text="50" />
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_key_balls_count"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:text="Balls Count:  "
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold"
+                        tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/tv_key_av_speed"
-                    android:textSize="16sp"
+                    <TextView
+                        android:id="@+id/tv_value_balls_count"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_key_balls_count"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="50"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:id="@+id/layout_average_speed"
                     android:layout_width="wrap_content"
-                    android:layout_below="@+id/tv_key_balls_count"
-                    android:layout_height="wrap_content"
-                    android:text="Average Speed:  "
-                    android:textColor="@color/logo_orange"
-                    android:fontFamily="@font/semi_bold" />
+                    android:layout_below="@+id/layout_balls_count"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_key_av_speed"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average Speed:  "
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold"
+                        tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/tv_value_av_speed"
+                    <TextView
+                        android:id="@+id/tv_value_av_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@+id/tv_key_av_speed"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="110.2 kmph"
+                        tools:ignore="HardcodedText" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_date_time"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_below="@+id/tv_key_balls_count"
-                    android:layout_toEndOf="@+id/tv_key_av_speed"
-                    android:fontFamily="@font/semi_bold"
-                    android:text="110.2 kmph" />
+                    android:layout_below="@+id/layout_average_speed"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_key_date"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content"
+                        android:text="Time:  "
+                        android:textColor="@color/logo_orange"
+                        android:fontFamily="@font/semi_bold"
+                        tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/tv_key_date"
-                    android:layout_width="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_below="@+id/tv_value_av_speed"
-                    android:layout_height="wrap_content"
-                    android:text="Time:  "
-                    android:textColor="@color/logo_orange"
-                    android:fontFamily="@font/semi_bold"/>
+                    <TextView
+                        android:id="@+id/tv_value_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@+id/tv_key_date"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="13/03/2023, 10:24AM"
+                        tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/tv_value_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:layout_below="@+id/tv_value_av_speed"
-                    android:layout_toEndOf="@+id/tv_key_date"
-                    android:fontFamily="@font/semi_bold"
-                    android:text="13/03/2023, 10:24AM" />
-
+                </RelativeLayout>
 
             </RelativeLayout>
 
         </RelativeLayout>
-
-
 
     </androidx.cardview.widget.CardView>
 
